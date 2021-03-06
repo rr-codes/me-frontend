@@ -23,10 +23,6 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-a {
-    text-decoration: none;
-}
-
 .response {
     border: solid rgba(255, 255, 255, 0.25) 1px;
     background-color: #292e43;
@@ -55,7 +51,7 @@ a {
 }
 
 code {
-    color: #b3b3b3;
+    color: #9da6b2;
     font-size: 16px;
     line-height: 1.4rem;
     font-family: 'Fira Code', monospace;
@@ -65,13 +61,12 @@ code {
     margin-top: 2rem;
 }
 
-.hljs {
-    color: #9da6b2;
+a {
+    color: rgb(30, 166, 114);
+    text-decoration: none;
 }
 
-.hljs-string,
-.hljs-attribute,
-.hljs-addition {
+.json-value {
     color: rgb(30, 166, 114);
 }
 

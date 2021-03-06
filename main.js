@@ -13,8 +13,6 @@ function mapValues(object, transformation) {
  * @return string
  */
 function parseResponse(response) {
-   // const mappedObject = mapValues(response, (value) => `<span class="json-value">${value}</span>`)
-
     const links = mapValues(response.links, (value) => `<a href=${value}>${value}</a>`)
 
     const email = `<a href=mailto:${response.email}?subject=Hey!>${response.email}</a>`
@@ -25,9 +23,9 @@ function parseResponse(response) {
         email
     }, null, 4);
 
-    console.log(parsedString)
+    const toHtml = parsedString.replaceAll(/: (".*")/g, ": <span class='json-value'>$1</span>")
 
-    return `<pre><code>${parsedString}</code></pre>`
+    return `<pre><code>${toHtml}</code></pre>`
 }
 
 
@@ -38,7 +36,7 @@ async function onLoad() {
     document.getElementById("about-response").innerHTML = parseResponse(body);
 
     // noinspection JSUnresolvedVariable
-    hljs.highlightAll()
+    //hljs.highlightAll()
 }
 
 (async () => await onLoad())()
