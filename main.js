@@ -34,9 +34,6 @@ async function onLoad() {
     const body = await aboutResponse.json();
 
     document.getElementById("about-response").innerHTML = parseResponse(body);
-
-    // noinspection JSUnresolvedVariable
-    //hljs.highlightAll()
 }
 
 (async () => await onLoad())()

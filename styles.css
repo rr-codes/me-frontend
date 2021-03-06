@@ -1,7 +1,6 @@
 html, body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
-    padding: 0 1rem;
 }
 
 body {
@@ -12,8 +11,10 @@ body {
     align-items: center;
 }
 
-container {
-    height: 100%;
+.container {
+    width: 90%;
+    max-width: 50rem;
+    margin: 2rem 0;
 }
 
 pre {
@@ -71,12 +72,6 @@ a {
 }
 
 .dollar {
-    background: linear-gradient(0.45turn, orange , yellow); /* Standard syntax (must be last) */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffff00;
     font-weight: bold;
-}
-
-li {
-    color: red;
 }
