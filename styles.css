@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+body {
+    background-color: #1b2036;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+container {
+    height: 100%;
+}
+
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+a {
+    text-decoration: none;
+}
+
+.response {
+    border: solid rgba(255, 255, 255, 0.25) 1px;
+    background-color: #292e43;
+    border-radius: 1rem;
+}
+
+.response-header {
+    margin: 0;
+    background-color: #3c4156;
+    padding: 1rem 1rem 0.8rem 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: #838b93;
+}
+
+.response-body {
+    padding: 0.5rem 1rem;
+}
+
+.request-body {
+    padding: 1rem;
+}
+
+.success {
+    color: #3bac2e;
+}
+
+code {
+    color: #b3b3b3;
+    font-size: 16px;
+    line-height: 1.4rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.padding {
+    margin-top: 2rem;
+}
+
+.hljs {
+    color: #9da6b2;
+}
+
+.hljs-string,
+.hljs-attribute,
+.hljs-addition {
+    color: rgb(30, 166, 114);
+}
+
+.dollar {
+    background: linear-gradient(0.45turn, orange , yellow); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+li {
+    color: red;
+}
