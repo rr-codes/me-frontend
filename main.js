@@ -24,8 +24,9 @@ function parseResponse(response) {
     }, null, 4);
 
     const toHtml = parsedString.replaceAll(/: (".*")/g, ": <span class='json-value'>$1</span>")
+    const arrayValuesToHtml = toHtml.replaceAll(/( *)(".*")\n/g, "$1 <span class='json-value'>$2\n</span>")
 
-    return `<pre><code>${toHtml}</code></pre>`
+    return `<pre><code>${arrayValuesToHtml}</code></pre>`
 }
 
 
